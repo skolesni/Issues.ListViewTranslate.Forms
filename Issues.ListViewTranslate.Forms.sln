@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Issues.ListViewTranslate.Forms.Android", "Issues.ListViewTranslate.Forms\Issues.ListViewTranslate.Forms.Android\Issues.ListViewTranslate.Forms.Android.csproj", "{27868ECC-4477-4989-8826-769ED957CA2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Issues.ListViewTranslate.Forms.Android", "Issues.ListViewTranslate.Forms.Android\Issues.ListViewTranslate.Forms.Android.csproj", "{27868ECC-4477-4989-8826-769ED957CA2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Issues.ListViewTranslate.Forms.iOS", "Issues.ListViewTranslate.Forms\Issues.ListViewTranslate.Forms.iOS\Issues.ListViewTranslate.Forms.iOS.csproj", "{F24AFAB6-C107-48C6-8AFE-3CB78A992A22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Issues.ListViewTranslate.Forms.iOS", "Issues.ListViewTranslate.Forms.iOS\Issues.ListViewTranslate.Forms.iOS.csproj", "{F24AFAB6-C107-48C6-8AFE-3CB78A992A22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Issues.ListViewTranslate.Forms", "Issues.ListViewTranslate.Forms\Issues.ListViewTranslate.Forms\Issues.ListViewTranslate.Forms.csproj", "{447393F3-C3E9-4AD1-9B3A-3E59FEE22BCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Issues.ListViewTranslate.Forms", "Issues.ListViewTranslate.Forms\Issues.ListViewTranslate.Forms.csproj", "{447393F3-C3E9-4AD1-9B3A-3E59FEE22BCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
