@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Issues.ListViewTranslate.Forms.Controls;assembly=Issues.ListViewTranslate.Forms"
+    x:Class="Issues.ListViewTranslate.Forms.Controls.NavigationMenuControl">
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="240" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid
+            Grid.Column="0"
+            RowSpacing="0"
+            ColumnSpacing="0"
+            BackgroundColor="#4B4B4B">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Command="{Binding HideMenuCommand}" />
+
+            <!-- This block of code works as expected
+            <StackLayout Grid.Row="1" BackgroundColor="#4B4B4B">
+                <Label Text="Home" TextColor="White" VerticalOptions="Center" Margin="16,0,16,0" HeightRequest="48" />
+                <Label Text="Messages" TextColor="White" VerticalOptions="Center" Margin="16,0,16,0" HeightRequest="48" />
+                <Label Text="Setting" TextColor="White" VerticalOptions="Center" Margin="16,0,16,0" HeightRequest="48" />
+                <Label Text="About" TextColor="White" VerticalOptions="Center" Margin="16,0,16,0" HeightRequest="48" />
+            </StackLayout>-->
+
+            <ListView Grid.Row="1" ItemsSource="{Binding MenuItems}" RowHeight="48" BackgroundColor="#4B4B4B"
+                      SeparatorVisibility="None">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding .}" TextColor="White" VerticalOptions="Center" Margin="16,0,16,0" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+        <ContentView Grid.Column="1">
+            <ContentView.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding HideMenuCommand}" />
+            </ContentView.GestureRecognizers>
+        </ContentView>
+    </Grid>
+</ContentView>

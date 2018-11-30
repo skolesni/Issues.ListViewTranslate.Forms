@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-
-namespace Issues.ListViewTranslate.Forms
+﻿namespace Issues.ListViewTranslate.Forms
 {
-    public partial class MainPage : ContentPage
+    using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+
+    public partial class MainPage
     {
         public MainPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+
+            this.On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
+
+            this.BindingContext = new MainPageViewModel();
         }
     }
 }

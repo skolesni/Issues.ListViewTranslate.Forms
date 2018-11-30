@@ -1,14 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Issues.ListViewTranslate.Forms"
-             x:Class="Issues.ListViewTranslate.Forms.MainPage">
+﻿<?xml version="1.0" encoding="utf-8"?>
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Issues.ListViewTranslate.Forms"
+    xmlns:controls="clr-namespace:Issues.ListViewTranslate.Forms.Controls;assembly=Issues.ListViewTranslate.Forms"
+    x:Class="Issues.ListViewTranslate.Forms.MainPage">
 
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <controls:ActionBarControl
+            Grid.Row="0"
+            Title="{Binding Title}"
+            IsMenuPresented="{Binding IsMenuPresented, Mode=TwoWay}"
+            MenuItems="{Binding MenuItems}"
+            HideMenuCommand="{Binding HideMenuCommand}" />
+
+    </Grid>
 </ContentPage>
