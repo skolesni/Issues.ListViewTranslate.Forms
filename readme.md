@@ -1,4 +1,6 @@
-This solution demonstrates an issue with Xamarin.Forms 3.4 where the appearance of the ListView control on iOS X devices changes after the ListView is shifted outside the screen boundary.
+This solution demonstrates an issue with Xamarin.Forms 3.4 logged at https://github.com/xamarin/Xamarin.Forms/issues/4599
+
+The issue is where the appearance of the ListView control on iOS X devices changes after the ListView is shifted outside the screen boundary.
 
 The description of the application flow:
 
